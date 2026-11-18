@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.title }}</title>
+<style>
+  :root { color-scheme: light dark; --fg: #1d1d1f; --bg: #ffffff; --muted: #5f6368; --link: #0b57d0; }
+  @media (prefers-color-scheme: dark) { :root { --fg: #e8eaed; --bg: #121212; --muted: #9aa0a6; --link: #8ab4f8; } }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+         font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 42rem; margin: 0 auto; padding: 1.5rem 16px 3rem; }
+  h1 { font-size: 1.6rem; line-height: 1.25; }
+  h2 { font-size: 1.15rem; margin-top: 2rem; }
+  a { color: var(--link); }
+  code { font-size: 0.9em; }
+  footer { color: var(--muted); font-size: 0.875rem; margin-top: 3rem; }
+</style>
+</head>
+<body>
+<main>
+{{ content }}
+<footer>Tropic Labs</footer>
+</main>
+</body>
+</html>
